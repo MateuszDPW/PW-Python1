@@ -45,4 +45,3 @@ if(age >= 18 and prawo_jazdy == 1):
     print("Jesteś pełnoletni i masz prawo jazdy")
 else:
     print("Jesteś niepełnoletni lub nie masz prawa jazdy")
-asd
