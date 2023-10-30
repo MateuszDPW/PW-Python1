@@ -29,7 +29,7 @@ else:
 
 #liczba parzysta
 
-num = int(input("Wpisz liczbę"))
+num = int(input("Wpisz liczbę: "))
 
 if(num %2 == 0):
     print("Liczba jest parzysta")
@@ -39,9 +39,9 @@ else:
 #and, sprawdzenie 2 warunkow
 
 age = int(input("Podaj wiek: "))
-prawo_jazdy = int(input("Czy masz prawo jazdy?(1/0)"))
+prawo_jazdy = input("Czy masz prawo jazdy?(1/0)")
 
-if(age >= 18 and prawo_jazdy.lower == 1):
+if(age >= 18 and prawo_jazdy == 1):
     print("Jesteś pełnoletni i masz prawo jazdy")
 else:
     print("Jesteś niepełnoletni lub nie masz prawa jazdy")
