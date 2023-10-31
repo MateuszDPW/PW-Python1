@@ -15,7 +15,7 @@ print(owoce.keys())
 print(owoce.values())
 print(owoce.items())
 print(owoce.clear())
-print(owoce.pop("banan"))
+#print(owoce.pop("banan"))
 print(owoce.get("banan",0))
 owoc = input("podaj nazwe owoca: ")
 for owoc in owoce.items():
@@ -31,7 +31,9 @@ if owoce.get(litera,0) != 0:
 else:
     print("brak")
 
-klucz, wartosc = owoce.popitem("banan")
+#klucz, wartosc = owoce.popitem("banan")
+
+#slowniki
 
 slownik1 = {'a': 1, 'b': 2}
 slownik2 = {'b': 3, 'c': 4}
@@ -59,12 +61,13 @@ print(lista)
 lista.insert(6, "cos")
 print(lista)
 lista.remove("cos")
+lista.remove("cos")
 print(lista)
 lista.pop(4)
-print(lista)
-lista.count()
 print(lista)
 lista.reverse()
 print(lista)
 lista.sort()
 print(lista)
+#lista.count()
+#print(lista)
