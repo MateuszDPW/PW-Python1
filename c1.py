@@ -1,47 +1,51 @@
-#podaj liczbe i sprawdz czy jest większa od 10
+#if else czy jest wieksze od 10
 
-number = int(input("Podaj liczbe: "))
-
-if(number > 10):
-    print("Liczba jest większa od 10")
+liczba = int(input("podaj liczbe"))
+if liczba > 10:
+    print("liczba jest wieksza od 10")
 else:
-    print("Podana liczba jest mniejsza lub równa 10")
+    print("liczba nie jest wieksza od 10")
 
-# popros o wiek, sprawdz czy jest to dziecko, mlodziez lub dorosly
+#elif
+#popros o podanie wieku i wydrukuj wiadomosc na podstawie wieku: "Młodzież", "Dziecko", "Dorosły"
 
-age = int(input("Podaj swój wiek: "))
+wiek = int(input("Podaj wiek"))
 
-if(age <10):
-    print("Jesteś dzieckiem")
-elif(age <18):
-    print("Jesteś młodzieżą")
+if wiek >= 18:
+    print("Dorosły")
+elif wiek < 10:
+    print("Dziecko")
 else:
-    print("Jesteś dorosły")
+    print("Młodzież")
 
-#sprawdzenie warunku true/false
+#Sprawdzenie wartosci prawdziwej/falszywej
+#zadeklaruj zmienna warunek o wartości True i napisz instrukcje warunkową która wypisze Prawda lub Fałsz na podstawie wartości tej zmiennej
 
-warunek = False
+warunek = True
 
 if warunek:
-    print("Warunek prawdziwy")
+    print("prawda")
 else:
-    print("Warunek fałszywy")
+    print("fałsz")
 
-#liczba parzysta
+#sprawdzenie czy liczba jest parzysta
+#popros o licz całk i sprawdz czy jest ona parzysta
 
-num = int(input("Wpisz liczbę: "))
+liczba = int(input("Podaj liczbe"))
 
-if(num %2 == 0):
+if liczba % 2 == 0:
     print("Liczba jest parzysta")
 else:
     print("Liczba jest nieparzysta")
 
-#and, sprawdzenie 2 warunkow
+#operator logiczny AND
+#popros o podanie swojego wieku i informacji czy ma prawo jazdy. nastepnie sprawdz, czy użytkownik jest pełnoletni i ma prawo jazdy
 
-age = int(input("Podaj wiek: "))
-prawo_jazdy = input("Czy masz prawo jazdy?(1/0)")
+wiek = int(input("Podaj swój wiek"))
+prawoJazdy = input("Czy masz prawo jazdy (TAK/NIE)?").lower()
 
-if(age >= 18 and prawo_jazdy == 1):
+if wiek >=18 and prawoJazdy == "tak":
     print("Jesteś pełnoletni i masz prawo jazdy")
 else:
-    print("Jesteś niepełnoletni lub nie masz prawa jazdy")
+    print("Nie jesteś pełnoletni lub nie masz prawa jazdy")
+
