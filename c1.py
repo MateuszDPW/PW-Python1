@@ -64,3 +64,11 @@ else:
     else:
         print("Liczba jest poza zakresem")
 
+#warunek z operatorami logicznymi
+#popros o podanie liczby i sprawdz czy jest ona podzielna przez 2 i 3 jednoczesnie
+
+num = int(input("Podaj liczbe: "))
+if liczba %2 == 0 and liczba %3 == 0:
+    print("liczba jest podzielna przez 2 i 3")
+else:
+    print("liczba nie jest podzielna przez 2 i 3")
