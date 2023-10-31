@@ -30,3 +30,27 @@ if owoce.get(litera,0) != 0:
     owoce.pop(litera)
 else:
     print("brak")
+
+klucz, wartosc = owoce.popitem("banan")
+
+slownik1 = {'a': 1, 'b': 2}
+slownik2 = {'b': 3, 'c': 4}
+
+slownik1.update(slownik2)
+#slownik1 = {'a':1, 'b':3, 'c':4}
+
+slownik1 = {'a': 1, 'b':2}
+slownik2 = slownik1.copy()
+print(slownik2)
+
+
+
+lista = [1,2,3]
+print(lista)
+print(lista[0])
+lista.append(4)
+print(lista)
+lista.extend([5,6,7])
+print(lista)
+lista.insert(3,0)
+print(lista)
