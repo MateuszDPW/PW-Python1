@@ -49,3 +49,18 @@ if wiek >=18 and prawoJazdy == "tak":
 else:
     print("Nie jesteś pełnoletni lub nie masz prawa jazdy")
 
+    #sprawdzenie przynaleznosci do zakresu
+    #popros o podanie liczby i sprawdz czy nalezy ona do zakresu od 10 do 50
+
+    num = int(input("Podaj liczbe: "))
+
+#if 10<= liczba <= 50:
+#zakres = (10,51)
+#if num in zakres[0]:
+#if liczba >=zakres[0] and liczba <=zakres[1]:
+
+    if num in range(10, 51):
+        print("Liczba nalezy do zakresu")
+    else:
+        print("Liczba jest poza zakresem")
+
