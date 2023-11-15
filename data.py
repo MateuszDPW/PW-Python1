@@ -56,3 +56,7 @@ print(now.strftime("%U"))
 
 rfc_date = datetime.strptime("2023-11-15 00:00:00", "%Y-%m-%d %H:%M:%S").strftime("%a, %d %b %Y %H:%M:%S +0000")
 print(rfc_date)
+
+#znajdz dzien tygodnia dla 4 lipca biezacego roku
+date2 = datetime(now.year, 7, 4)
+print(date2.strftime("%A"))
